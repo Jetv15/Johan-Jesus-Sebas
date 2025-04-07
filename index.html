@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peligros y Normativa</title>
+    <title>Peligros y Normativa - ADSO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body >
-    <header class="bg-primary text-white text-center py-3">
-        <h1>Seguridad y Salud en el trabajo ADSO</h1>
+<body>
+    <header>
+        <h1>Seguridad y Salud en el Trabajo - ADSO</h1>
+        <h2>Explora los peligros y normativas clave de forma interactiva</h2>
     </header>
 
-    <main class="container my-4">
+    <main class="container my-5">
         <div class="row">
             <!-- Botones de navegación -->
             <div class="col-md-3">
                 <div class="list-group">
                     <button class="list-group-item list-group-item-action" onclick="mostrarContenido('biologicos')">Peligros Biológicos</button>
-                    <button class="list-group-item list-group-item-action" onclick="mostrarContenido('fisico')">Peligors Fisicos</button>
+                    <button class="list-group-item list-group-item-action" onclick="mostrarContenido('fisicos')">Peligros Físicos</button>
                     <button class="list-group-item list-group-item-action" onclick="mostrarContenido('quimicos')">Peligros Químicos</button>
                     <button class="list-group-item list-group-item-action" onclick="mostrarContenido('psicosociales')">Peligros Psicosociales</button>
                     <button class="list-group-item list-group-item-action" onclick="mostrarContenido('biomecanicos')">Peligros Biomecánicos</button>
@@ -31,97 +30,117 @@
 
             <!-- Contenido dinámico -->
             <div class="col-md-9">
-                <div id="contenido" class="p-3 border rounded bg-light">
-                    <div id="biologicos" class="contenido-seccion" style="display:none;">
+                <div id="contenido">
+                    <!-- Peligros Biológicos -->
+                    <div id="biologicos" class="contenido-seccion">
                         <h3>Peligros Biológicos</h3>
-                        <p><strong>Descripción:</strong> Los peligros biológicos, o biorriesgos, son agentes de origen biológico que amenazan la salud de humanos, animales, plantas o el medio ambiente. Incluyen microorganismos como bacterias (Escherichia coli, Salmonella), virus (influenza, SARS-CoV-2), hongos (Aspergillus) y parásitos, así como toxinas que producen, como las del Clostridium botulinum. Estos agentes se encuentran en la naturaleza (agua, suelo, aire) y en entornos humanos como hospitales, granjas o laboratorios. Su invisibilidad y capacidad de propagación los hacen especialmente peligrosos.
-                            Se clasifican en cuatro niveles de bioseguridad según su riesgo. El nivel 1 incluye agentes poco peligrosos, mientras que el nivel 4 abarca patógenos letales como el Ébola, que requieren estrictas medidas de contención. Las fuentes de exposición varían: el contacto con fluidos corporales puede transmitir VIH, el agua contaminada propaga cólera y los vectores como mosquitos transmiten dengue. Además, el bioterrorismo y el cambio climático, que expande el rango de enfermedades, son riesgos emergentes.
-                            Los efectos dependen de la vía de entrada (inhalación, ingestión, piel), la dosis y la salud del individuo. Pueden causar desde infecciones leves hasta fallo orgánico o muerte. La prevención incluye higiene (lavado de manos, esterilización), uso de equipos de protección (guantes, mascarillas) y vacunas. En laboratorios, se aplican protocolos de bioseguridad, mientras que a nivel global, la OMS coordina respuestas a brotes.
-                            Históricamente, la Peste Negra y la gripe española muestran su impacto devastador; hoy, el VIH y el COVID-19 son ejemplos actuales. La educación y la conciencia son clave para mitigarlos, aunque desafíos como la resistencia antimicrobiana y la globalización complican su control. En resumen, los peligros biológicos son una amenaza constante que requiere vigilancia, ciencia y cooperación para proteger la salud y el ecosistema.
-                            </p>
-                        <button class="bacterias">Bacterias</button>
-                        <button class="Virus">Virus</button>
-                        <button class="">drgf</button>
-                        <button class="">df</button>
-                        <button class="">df</button>                        
-                        <li><strong>Normativa:</strong> Ley 1562 de 2012, Resolución 666 de 2020.</li>
-                    </div>
-                    <div id="fisico" class="contenido-seccion" style="display:none;">
-                        <h3>Peligros fisico</h3>
-                        <p><strong>Descripción:</strong> Los peligros físicos son factores del entorno que pueden causar daño al cuerpo humano por medios mecánicos, térmicos, eléctricos o ambientales, sin intervención de agentes biológicos. En Colombia, estos riesgos están regulados por el Sistema General de Riesgos Laborales (SGRL), establecido en el Decreto 1295 de 1994, la Ley 1562 de 2012 y el Decreto 1072 de 2015, que obligan a los empleadores a identificarlos y controlarlos mediante el Sistema de Gestión de Seguridad y Salud en el Trabajo (SG-SST).
-                            Entre los peligros físicos más comunes están las lesiones mecánicas, como golpes, cortes o caídas, causadas por maquinaria, herramientas o superficies inestables. El ruido, generado por equipos industriales o tráfico, puede provocar pérdida auditiva o estrés si excede los 85 decibeles permitidos por la Resolución 627 de 2006. La vibración, presente en trabajos con herramientas manuales o vehículos, afecta articulaciones y circulación. Las temperaturas extremas (calor excesivo en fábricas o frío en almacenes) causan quemaduras, deshidratación o hipotermia si no se controlan.
-                            La electricidad es otro riesgo, con descargas o incendios por cables defectuosos o instalaciones mal mantenidas. La radiación, como la ultravioleta en trabajos al aire libre o ionizante en hospitales, puede dañar piel y ojos. Además, la iluminación inadecuada genera fatiga visual o accidentes por poca visibilidad.
-                            La Resolución 0312 de 2019 exige medidas preventivas como equipos de protección (cascos, guantes, gafas), señalización y mantenimiento de infraestructura. Las Administradoras de Riesgos Laborales (ARL) supervisan y capacitan para reducir estos riesgos. El incumplimiento puede acarrear multas de hasta 500 salarios mínimos (unos 650 millones de pesos en 2025). Controlar estos peligros protege la integridad física de los trabajadores y asegura entornos laborales seguros en cualquier sector.
-                            </p>
-                        <button class="">drgf</button>
-                        <button class="">df</button>
-                        <button class="">df</button>    
-                        <button class="">df</button>
-                        <button class="">df</button>    
-                    </div>
-                    <div id="quimicos" class="contenido-seccion" style="display:none;">
-                        <h3>Peligros Biológicos</h3>
-                        <p><strong>Descripción:</strong> Los peligros químicos son sustancias o mezclas de compuestos que pueden causar daños a la salud humana, al medio ambiente o a la propiedad debido a sus características tóxicas, corrosivas, inflamables, explosivas o reactivas. Estos peligros pueden presentarse en diversas formas, como gases, líquidos, sólidos o aerosoles, y se encuentran comúnmente en entornos industriales, agrícolas, domésticos y de laboratorio.
-                            La exposición a productos químicos peligrosos puede ocurrir por inhalación, contacto con la piel, ingestión o absorción ocular, provocando efectos adversos que van desde irritaciones leves hasta enfermedades graves como cáncer, daños en órganos o alteraciones del sistema nervioso. Los productos químicos inflamables, como solventes y combustibles, pueden generar incendios y explosiones si no se manipulan adecuadamente. Por otro lado, sustancias corrosivas, como ácidos y bases fuertes, pueden destruir materiales y causar quemaduras severas en la piel y los ojos.
-                            En el ámbito laboral, la gestión de los peligros químicos es crucial para garantizar la seguridad de los trabajadores. Para ello, se implementan medidas de prevención como el uso de equipos de protección personal (EPP), ventilación adecuada y la correcta señalización de los productos peligrosos. Además, es esencial seguir las normativas de seguridad química y capacitar a los empleados sobre el manejo adecuado de estas sustancias.
-                            El impacto ambiental de los peligros químicos también es significativo. Los derrames y desechos industriales pueden contaminar suelos y cuerpos de agua, afectando la biodiversidad y la calidad del agua potable. Por ello, es fundamental promover prácticas de almacenamiento seguro, reciclaje y disposición adecuada de productos químicos para minimizar los riesgos asociados.</p>
-    
-                       
-                            <p><strong>Normativa:</strong> En Colombia, los riesgos biológicos están regulados por la Ley 1562 de 2012, que establece el Sistema de Gestión de Seguridad y Salud en el Trabajo (SG-SST). Además, la Resolución 666 de 2020 define protocolos de bioseguridad para mitigar riesgos de enfermedades infecciosas.</p>
-                            <button class="">drgf</button>
-                            <button class="">df</button>
-                            <button class="">df</button>    
+                        <p>Los peligros biológicos son agentes como bacterias, virus, hongos y parásitos que representan una amenaza para la salud humana, especialmente en entornos laborales. Estos agentes pueden transmitirse por contacto directo, aire, agua o superficies contaminadas, afectando a los desarrolladores de software en oficinas o espacios de teletrabajo. Aunque el desarrollo de software es una actividad tecnológica, la exposición a microorganismos patógenos puede surgir en espacios mal ventilados, superficies compartidas como teclados o sistemas de climatización descuidados. Por ejemplo, bacterias como Staphylococcus aureus o virus como el SARS-CoV-2 pueden propagarse rápidamente en equipos de trabajo, causando desde infecciones leves hasta brotes que interrumpen proyectos. La globalización y el cambio climático han ampliado la presencia de enfermedades transmitidas por vectores, como el dengue, incluso en áreas urbanas donde operan empresas tecnológicas. La prevención requiere medidas como higiene estricta, ventilación adecuada y protocolos de limpieza. En Colombia, el Sistema General de Riesgos Laborales (SGRL) obliga a los empleadores a identificar y controlar estos riesgos para garantizar entornos seguros. La falta de atención a estos peligros puede reducir la productividad, aumentar el ausentismo y generar costos asociados a tratamientos médicos. Además, la resistencia antimicrobiana complica su manejo, haciendo imprescindible una vigilancia constante.</p>
+                        <button class="sub-button" onclick="mostrarSubContenido('biologicos-riesgos')">Peligros y Riesgos</button>
+                        <div id="biologicos-riesgos" class="sub-content">
+                            <p><strong>1. Bacterias en superficies:</strong> Teclados y ratones sucios acumulan Staphylococcus. <strong>Riesgo:</strong> Infecciones cutáneas o sistémicas que afectan la productividad.</p>
+                            <p><strong>2. Virus respiratorios:</strong> Influenza o COVID-19 en oficinas. <strong>Riesgo:</strong> Brotes que causan ausencias masivas y retrasos en proyectos.</p>
+                            <p><strong>3. Legionella en climatización:</strong> Crecimiento en sistemas de aire acondicionado. <strong>Riesgo:</strong> Neumonía que incapacita a desarrolladores.</p>
+                            <p><strong>4. Moho en espacios húmedos:</strong> Hongos como Aspergillus en oficinas mal mantenidas. <strong>Riesgo:</strong> Alergias o problemas respiratorios que afectan la concentración.</p>
+                            <p><strong>5. Alimentos contaminados:</strong> Salmonella en comedores corporativos. <strong>Riesgo:</strong> Gastroenteritis que interrumpe flujos de trabajo.</p>
+                            <p><strong>Normativa:</strong> Decreto 1072 de 2015 y Resolución 0312 de 2019 exigen ventilación y desinfección en el SG-SST. Multas: hasta 650 millones de pesos (2025).</p>
                         </div>
-                    <div id="psicosociales" class="contenido-seccion" style="display:none;">
+                        <p><strong>Normativa:</strong> En Colombia, el Decreto 1295 de 1994 y la Ley 1562 de 2012 regulan el SGRL, exigiendo medidas de bioseguridad. Incumplir puede costar hasta 500 salarios mínimos.</p>
+                    </div>
+
+                    <!-- Peligros Físicos -->
+                    <div id="fisicos" class="contenido-seccion">
+                        <h3>Peligros Físicos</h3>
+                        <p>Los peligros físicos abarcan factores del entorno que pueden dañar el cuerpo humano sin intervención biológica, como ruido, electricidad, temperaturas extremas o ergonomía deficiente. En el desarrollo de software, estos riesgos son comunes en oficinas o espacios de teletrabajo mal diseñados. Por ejemplo, el ruido de equipos o conversaciones puede superar los 60 dB, afectando la concentración necesaria para programar. La electricidad, presente en cables y dispositivos, plantea riesgos de descargas o incendios si las instalaciones son defectuosas. Las temperaturas extremas, ya sea por calor en zonas sin aire acondicionado o frío excesivo por sistemas mal calibrados, generan incomodidad y fatiga. La ergonomía deficiente, como sillas sin soporte o pantallas mal posicionadas, es un peligro constante para desarrolladores que pasan horas sentados. Estos factores no solo afectan la salud física, sino también la calidad del código y los plazos de entrega. En Colombia, el SGRL exige a las empresas identificar y mitigar estos riesgos mediante inspecciones, equipos de protección y diseño adecuado de puestos de trabajo. Ignorar estos peligros puede derivar en lesiones crónicas, estrés o accidentes que comprometan la continuidad operativa.</p>
+                        <button class="sub-button" onclick="mostrarSubContenido('fisicos-riesgos')">Peligros y Riesgos</button>
+                        <div id="fisicos-riesgos" class="sub-content">
+                            <p><strong>1. Ruido ambiental:</strong> Oficinas abiertas con más de 60 dB. <strong>Riesgo:</strong> Fatiga auditiva y errores en el código.</p>
+                            <p><strong>2. Cables sueltos:</strong> Conexiones eléctricas expuestas. <strong>Riesgo:</strong> Descargas o incendios que dañan equipos.</p>
+                            <p><strong>3. Iluminación deficiente:</strong> Menos de 500 lux en escritorios. <strong>Riesgo:</strong> Fatiga visual y dolores de cabeza.</p>
+                            <p><strong>4. Calor excesivo:</strong> Temperaturas sobre 26°C por equipos. <strong>Riesgo:</strong> Deshidratación y pérdida de concentración.</p>
+                            <p><strong>5. Sillas no ergonómicas:</strong> Sin soporte lumbar. <strong>Riesgo:</strong> Dolor de espalda crónico y baja productividad.</p>
+                            <p><strong>Normativa:</strong> Resolución 627 de 2006 y Decreto 1072 de 2015 regulan ruido y ergonomía. Multas: hasta 650 millones de pesos (2025).</p>
+                        </div>
+                        <p><strong>Normativa:</strong> Decreto 1072 de 2015 y Resolución 0312 de 2019 exigen controles físicos en el SG-SST. Multas por incumplimiento: hasta 650 millones de pesos (2025).</p>
+                    </div>
+
+                    <!-- Peligros Químicos -->
+                    <div id="quimicos" class="contenido-seccion">
+                        <h3>Peligros Químicos</h3>
+                        <p>Los peligros químicos son sustancias que, por sus propiedades tóxicas, inflamables o corrosivas, pueden dañar la salud o el entorno laboral. Aunque menos evidentes en el desarrollo de software, están presentes en oficinas a través de limpiadores, tintas de impresoras, baterías de dispositivos o gases de sistemas de climatización. La exposición ocurre por inhalación, contacto con la piel o ingestión accidental, afectando a los programadores en espacios cerrados o mal ventilados. Por ejemplo, productos de limpieza con amoníaco o cloro emiten vapores irritantes que dañan las vías respiratorias. Las tintas y tóneres liberan compuestos orgánicos volátiles (COV) que, sin ventilación adecuada, causan mareos o alergias. Las baterías de laptops, si se dañan, pueden filtrar químicos corrosivos como el litio. Estos riesgos son sutiles pero acumulativos, afectando la salud a largo plazo y la capacidad de concentración. En Colombia, las empresas deben gestionar estos peligros mediante el SGRL, asegurando ventilación, etiquetado claro y capacitación. La falta de control puede derivar en incidentes como intoxicaciones leves o incendios, interrumpiendo proyectos tecnológicos.</p>
+                        <button class="sub-button" onclick="mostrarSubContenido('quimicos-riesgos')">Peligros y Riesgos</button>
+                        <div id="quimicos-riesgos" class="sub-content">
+                            <p><strong>1. Limpiadores fuertes:</strong> Uso de amoníaco en oficinas. <strong>Riesgo:</strong> Irritación respiratoria y ocular.</p>
+                            <p><strong>2. Tintas de impresora:</strong> Emisión de COV. <strong>Riesgo:</strong> Mareos y alergias crónicas.</p>
+                            <p><strong>3. Baterías dañadas:</strong> Fugas de litio en laptops. <strong>Riesgo:</strong> Quemaduras químicas o incendios.</p>
+                            <p><strong>4. Aire acondicionado sucio:</strong> Liberación de gases tóxicos. <strong>Riesgo:</strong> Dolor de cabeza y fatiga.</p>
+                            <p><strong>5. Solventes en mantenimiento:</strong> Uso cerca de equipos. <strong>Riesgo:</strong> Inflamación y daños pulmonares.</p>
+                            <p><strong>Normativa:</strong> Decreto 1072 de 2015 exige ventilación y etiquetado. Multas: hasta 650 millones de pesos (2025).</p>
+                        </div>
+                        <p><strong>Normativa:</strong> Ley 1562 de 2012 y Resolución 0312 de 2019 regulan riesgos químicos en el SG-SST. Multas: hasta 650 millones de pesos (2025).</p>
+                    </div>
+
+                    <!-- Peligros Psicosociales -->
+                    <div id="psicosociales" class="contenido-seccion">
                         <h3>Peligros Psicosociales</h3>
-                        <p><strong>Descripción:</strong>Los peligros psicosociales son factores relacionados con la organización del trabajo, el entorno laboral y las interacciones sociales que pueden afectar negativamente la salud mental, emocional y física de los trabajadores. Estos riesgos pueden generar estrés, ansiedad, depresión y otras afecciones que disminuyen el bienestar y la productividad en el ámbito laboral.
-                            Entre los principales peligros psicosociales se encuentran la carga excesiva de trabajo, la falta de control sobre las tareas, el acoso laboral, la inestabilidad en el empleo, la mala comunicación organizacional y la falta de apoyo de compañeros o superiores. Un ambiente de trabajo con condiciones estresantes y exigencias poco realistas puede provocar agotamiento físico y mental, afectando la motivación y el desempeño de los empleados.
-                            El estrés laboral prolongado es una de las principales consecuencias de los riesgos psicosociales y puede derivar en problemas de salud como trastornos del sueño, hipertensión, fatiga crónica e incluso enfermedades cardiovasculares. Además, el impacto emocional puede afectar las relaciones personales y la calidad de vida fuera del trabajo.
-                            Para prevenir y gestionar estos peligros, las empresas deben implementar estrategias como la promoción de un ambiente de trabajo saludable, el fomento de la comunicación efectiva, el reconocimiento del esfuerzo de los trabajadores y la adopción de políticas de conciliación entre la vida laboral y personal. También es esencial capacitar a los empleados en técnicas de manejo del estrés y brindar apoyo psicológico cuando sea necesario.
-                            Reducir los riesgos psicosociales no solo mejora el bienestar de los trabajadores, sino que también aumenta la productividad y reduce la rotación de personal, contribuyendo a una organización más eficiente y sostenible. </p>
-                        <ul>
-                            <li><strong>Gestión organizacional:</strong> Acoso laboral, carga excesiva de trabajo.</li>
-                            <li><strong>Normativa:</strong> Resolución 2646 de 2008, Ley 1010 de 2006.</li>
-                        </ul>
-                        <button class="">drgf</button>
-                        <button class="">df</button>
-                        <button class="">df</button>    
+                        <p>Los peligros psicosociales son factores organizativos y sociales que afectan la salud mental y emocional de los trabajadores. En el desarrollo de software, donde la presión por plazos y la concentración son altas, estos riesgos son frecuentes. La sobrecarga laboral, como asignar múltiples proyectos con fechas límite ajustadas, genera estrés y agotamiento. La falta de apoyo de superiores o el aislamiento en teletrabajo pueden aumentar la ansiedad. El acoso laboral, como críticas constantes o micromanagement, daña la autoestima y la colaboración en equipo. La incertidumbre por contratos temporales también afecta la estabilidad emocional. Estos factores reducen la creatividad y la calidad del código, incrementando errores y retrasos. En Colombia, el SGRL exige a las empresas evaluar y mitigar estos riesgos mediante políticas de bienestar, comunicación efectiva y límites claros en las cargas de trabajo. Ignorar estos peligros puede llevar a tasas altas de rotación y burnout, afectando la sostenibilidad de los equipos tecnológicos.</p>
+                        <button class="sub-button" onclick="mostrarSubContenido('psicosociales-riesgos')">Peligros y Riesgos</button>
+                        <div id="psicosociales-riesgos" class="sub-content">
+                            <p><strong>1. Plazos ajustados:</strong> Entregas urgentes sin descansos. <strong>Riesgo:</strong> Burnout y errores frecuentes.</p>
+                            <p><strong>2. Aislamiento:</strong> Teletrabajo sin interacción. <strong>Riesgo:</strong> Ansiedad y baja motivación.</p>
+                            <p><strong>3. Micromanagement:</strong> Supervisión excesiva. <strong>Riesgo:</strong> Estrés y pérdida de confianza.</p>
+                            <p><strong>4. Falta de reconocimiento:</strong> Esfuerzo ignorado. <strong>Riesgo:</strong> Desmotivación y abandono.</p>
+                            <p><strong>5. Inestabilidad laboral:</strong> Contratos cortos. <strong>Riesgo:</strong> Inseguridad y depresión.</p>
+                            <p><strong>Normativa:</strong> Resolución 2646 de 2008 exige evaluación psicosocial. Multas: hasta 650 millones de pesos (2025).</p>
+                        </div>
+                        <p><strong>Normativa:</strong> Ley 1010 de 2006 y Decreto 1072 de 2015 regulan acoso y estrés. Multas: hasta 650 millones de pesos (2025).</p>
                     </div>
 
-                    <div id="biomecanicos" class="contenido-seccion" style="display:none;">
+                    <!-- Peligros Biomecánicos -->
+                    <div id="biomecanicos" class="contenido-seccion">
                         <h3>Peligros Biomecánicos</h3>
-                        <p><strong>Descripción:</strong> Factores físicos que afectan el sistema musculoesquelético.</p>
-                        <ul>
-                            <li><strong>Posturas prolongadas:</strong> Dolor lumbar y cervical.</li>
-                            <li><strong>Normativa:</strong> Resolución 1401 de 2007, Ley 1562 de 2012.</li>
-                        </ul>
-                        <button class="">drgf</button>
-                        <button class="">df</button>
-                        <button class="">df</button>    
+                        <p>Los peligros biomecánicos están relacionados con el esfuerzo físico y las posturas que afectan el sistema musculoesquelético. Para los desarrolladores de software, que pasan largas horas frente a computadoras, estos riesgos son críticos. La repetición de movimientos, como teclear o usar el ratón, junto con posturas estáticas prolongadas, genera tensiones en muñecas, cuello y espalda. Un diseño ergonómico deficiente, como sillas sin soporte lumbar o escritorios mal ajustados, agrava el problema. La falta de pausas activas incrementa la fatiga muscular y el riesgo de lesiones crónicas. Estos peligros son comunes en oficinas y teletrabajo, donde el enfoque en la productividad a menudo ignora la salud física. En Colombia, el SGRL exige a las empresas implementar evaluaciones ergonómicas y medidas preventivas, como mobiliario adecuado y capacitación en posturas. No abordar estos riesgos puede derivar en trastornos que afecten la capacidad de trabajo y la calidad de vida de los programadores.</p>
+                        <button class="sub-button" onclick="mostrarSubContenido('biomecanicos-riesgos')">Peligros y Riesgos</button>
+                        <div id="biomecanicos-riesgos" class="sub-content">
+                            <p><strong>1. Tecleo repetitivo:</strong> Uso constante del teclado. <strong>Riesgo:</strong> Síndrome del túnel carpiano.</p>
+                            <p><strong>2. Postura estática:</strong> Sentado por más de 6 horas. <strong>Riesgo:</strong> Lumbalgia crónica.</p>
+                            <p><strong>3. Pantalla mal ajustada:</strong> Altura incorrecta. <strong>Riesgo:</strong> Dolor cervical y fatiga.</p>
+                            <p><strong>4. Ratón sin soporte:</strong> Uso prolongado sin apoyo. <strong>Riesgo:</strong> Tendinitis en muñeca.</p>
+                            <p><strong>5. Falta de pausas:</strong> Trabajo continuo. <strong>Riesgo:</strong> Fatiga muscular generalizada.</p>
+                            <p><strong>Normativa:</strong> Resolución 1401 de 2007 exige ergonomía. Multas: hasta 650 millones de pesos (2025).</p>
+                        </div>
+                        <p><strong>Normativa:</strong> Decreto 1072 de 2015 y Resolución 0312 de 2019 regulan riesgos biomecánicos. Multas: hasta 650 millones de pesos (2025).</p>
                     </div>
 
-                    <div id="seguridad" class="contenido-seccion" style="display:none;">
+                    <!-- Condiciones de Seguridad -->
+                    <div id="seguridad" class="contenido-seccion">
                         <h3>Condiciones de Seguridad</h3>
-                        <p><strong>Descripción:</strong> Riesgos derivados de fallas en la seguridad del entorno laboral.</p>
-                        <ul>
-                            <li><strong>Máquinas:</strong> Amputaciones o atrapamientos.</li>
-                            <li><strong>Normativa:</strong> Resolución 2400 de 1979, Decreto 1072 de 2015.</li>
-                        </ul>
-                        <button class="">drgf</button>
-                        <button class="">df</button>
-                        <button class="">df</button>    
+                        <p>Las condiciones de seguridad abarcan los factores del entorno que, de no gestionarse, pueden provocar accidentes o lesiones. En el desarrollo de software, estos riesgos incluyen cables desordenados, salidas de emergencia bloqueadas o equipos mal mantenidos. En oficinas, los cables expuestos cerca de escritorios generan tropiezos o cortocircuitos. La falta de señalización dificulta evacuaciones en emergencias, mientras que el mal mantenimiento de equipos eléctricos puede causar incendios. Superficies resbaladizas por derrames o acumulación de objetos en pasillos son comunes en espacios compartidos. Estos peligros afectan la integridad física de los programadores y la continuidad de los proyectos al dañar infraestructura tecnológica. En Colombia, el SGRL exige inspecciones regulares, señalización clara y planes de emergencia para garantizar entornos seguros. No cumplir con estas medidas puede resultar en incidentes graves y sanciones económicas.</p>
+                        <button class="sub-button" onclick="mostrarSubContenido('seguridad-riesgos')">Peligros y Riesgos</button>
+                        <div id="seguridad-riesgos" class="sub-content">
+                            <p><strong>1. Cables sueltos:</strong> Enredados en el suelo. <strong>Riesgo:</strong> Tropiezos o descargas.</p>
+                            <p><strong>2. Salidas bloqueadas:</strong> Objetos en pasillos. <strong>Riesgo:</strong> Evacuación lenta en emergencias.</p>
+                            <p><strong>3. Equipos defectuosos:</strong> Computadoras sin mantenimiento. <strong>Riesgo:</strong> Incendios eléctricos.</p>
+                            <p><strong>4. Falta de señalización:</strong> Sin rutas claras. <strong>Riesgo:</strong> Confusión en evacuaciones.</p>
+                            <p><strong>5. Superficies resbaladizas:</strong> Derrames no limpiados. <strong>Riesgo:</strong> Caídas y lesiones.</p>
+                            <p><strong>Normativa:</strong> Resolución 2400 de 1979 exige seguridad. Multas: hasta 650 millones de pesos (2025).</p>
+                        </div>
+                        <p><strong>Normativa:</strong> Decreto 1072 de 2015 y Resolución 0312 de 2019 regulan condiciones seguras. Multas: hasta 650 millones de pesos (2025).</p>
                     </div>
 
-                    <div id="naturales" class="contenido-seccion" style="display:none;">
+                    <!-- Fenómenos Naturales -->
+                    <div id="naturales" class="contenido-seccion">
                         <h3>Fenómenos Naturales</h3>
-                        <p><strong>Descripción:</strong> Eventos naturales que pueden poner en riesgo la seguridad.</p>
-                        <ul>
-                            <li><strong>Sismos:</strong> Daños estructurales y peligros para los trabajadores.</li>
-                            <li><strong>Normativa:</strong> Ley 1523 de 2012, Resolución 1016 de 1989.</li>
-                        </ul>
-                        <button class="">drgf</button>
-                        <button class="">df</button>
-                        <button class="">df</button>    
+                        <p>Los fenómenos naturales son eventos como terremotos, inundaciones o tormentas que pueden afectar la seguridad de los desarrolladores de software y sus entornos de trabajo. En Colombia, un país con alta actividad sísmica y climática, estos riesgos son significativos. Un terremoto puede dañar oficinas, colapsar estructuras o interrumpir el suministro eléctrico, afectando servidores y equipos. Las inundaciones, comunes en zonas urbanas mal drenadas, dañan infraestructura tecnológica y exponen a riesgos eléctricos. Las tormentas con vientos fuertes pueden derribar líneas de energía o romper ventanas, generando peligros físicos. Los deslizamientos, frecuentes en áreas montañosas, bloquean accesos o destruyen edificaciones. Estos eventos interrumpen proyectos, dañan datos críticos y ponen en riesgo la vida de los programadores. En el SGRL, las empresas deben preparar planes de evacuación, estructuras resistentes y sistemas de respaldo para mitigar estos peligros.</p>
+                        <button class="sub-button" onclick="mostrarSubContenido('naturales-riesgos')">Peligros y Riesgos</button>
+                        <div id="naturales-riesgos" class="sub-content">
+                            <p><strong>1. Terremotos:</strong> Sismos en oficinas. <strong>Riesgo:</strong> Colapso estructural y pérdida de equipos.</p>
+                            <p><strong>2. Inundaciones:</strong> Agua en zonas bajas. <strong>Riesgo:</strong> Daños eléctricos y datos perdidos.</p>
+                            <p><strong>3. Tormentas:</strong> Vientos fuertes. <strong>Riesgo:</strong> Caída de objetos y cortes de energía.</p>
+                            <p><strong>4. Deslizamientos:</strong> Lodo cerca de oficinas. <strong>Riesgo:</strong> Bloqueo de accesos y lesiones.</p>
+                            <p><strong>5. Fallos eléctricos:</strong> Post-fenómeno. <strong>Riesgo:</strong> Incendios o interrupciones prolongadas.</p>
+                            <p><strong>Normativa:</strong> Ley 1523 de 2012 exige preparación. Multas: hasta 650 millones de pesos (2025).</p>
+                        </div>
+                        <p><strong>Normativa:</strong> Decreto 1072 de 2015 y Resolución 1016 de 1989 regulan emergencias. Multas: hasta 650 millones de pesos (2025).</p>
                     </div>
                 </div>
             </div>
@@ -129,10 +148,9 @@
     </main>
 
     <footer>
-        &copy; 2025 Peligros y Normativa. Todos los derechos reservados.
+        © 2025 Seguridad y Salud ADSO. Todos los derechos reservados.
     </footer>
 
     <script src="js/code.js"></script>
 </body>
-
 </html>
