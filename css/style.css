@@ -1,54 +1,136 @@
+/* Fondo básico - Pertenece al <body> */
 body {
-    font-family: 'Times New Roman', Times, serif;
-    color: #212529;
-    background-image: url(https://images.unsplash.com/photo-1539617546058-a8f9510b464e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
+    font-family: 'Arial', sans-serif; /* Fuente general */
+    background: linear-gradient(135deg, #ffebee, #ffcdd2, #ef9a9a); /* Gradiente rojo claro */
+    min-height: 100vh; /* Altura mínima para cubrir la pantalla */
+    overflow-x: hidden; /* Evita desbordamiento horizontal */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin relleno */
 }
 
+/* Encabezado - Pertenece al <header> */
 header {
-    background-color: #007bff;
-    color: #ffffff9a;
-    padding: 20px 10;
-    text-align: center;
+    background: linear-gradient(90deg, #a61fe6, #00ff22); /* Gradiente rojo */
+    color: white; /* Texto blanco */
+    padding: 2.5rem; /* Espacio interno */
+    text-align: center; /* Centrado */
+    box-shadow: 0 6px 30px rgba(239, 83, 80, 0.6); /* Sombra roja */
 }
 
-.list-group-item {
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
+/* Título del header - Pertenece al <h1> dentro del <header> */
+header h1 {
+    margin: 0; /* Sin márgenes */
+    font-size: 3rem; /* Tamaño grande */
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); /* Sombra para contraste */
 }
 
-.list-group-item:hover {
-    background-color: #0057b3be;
-    color: #ff0000;
+/* Párrafo del header - Pertenece al <p> dentro del <header> */
+header p {
+    margin: 0.5rem 0 0; /* Margen superior */
+    font-size: 1.3rem; /* Tamaño legible */
+    opacity: 0.9; /* Ligeramente transparente */
 }
 
-#contenido {
-    min-height: 400px;
-    
+/* Botones principales - Pertenece a los <button class="list-group-item list-group-item-action"> */
+.list-group-item-action {
+    background: linear-gradient(45deg, #ef5350, #ff8a80); /* Rojo Rubí a Rojo Coral Claro */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    margin-bottom: 15px; /* Espacio entre botones */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 18px; /* Espacio interno */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    transition: all 0.5s ease; /* Transición suave */
+    box-shadow: 0 5px 20px rgba(239, 83, 80, 0.5); /* Sombra roja */
+    cursor: pointer; /* Cursor de mano */
 }
 
+/* Hover de los botones principales */
+.list-group-item-action:hover {
+    background: linear-gradient(45deg, #00aeff, #ef5350); /* Rojo Cereza a Rojo Rubí */
+    transform: translateY(-8px) scale(1.08); /* Elevación y escala */
+    box-shadow: 0 10px 30px rgba(239, 83, 80, 0.8); /* Sombra más intensa */
+}
+
+/* Secciones de contenido - Pertenece a los <div class="contenido-seccion"> */
 .contenido-seccion {
-    display: none;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    padding: 35px; /* Espacio interno */
+    border-radius: 25px; /* Bordes redondeados */
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); /* Sombra negra */
+    display: none; /* Oculto por defecto (controlado por JS) */
+    border: 2px solid rgba(239, 83, 80, 0.3); /* Borde rojo sutil */
 }
 
+/* Títulos de las secciones - Pertenece a los <h3> dentro de .contenido-seccion */
+h3 {
+    color: #ef5350; /* Rojo Rubí */
+    border-bottom: 4px solid #ff8a80; /* Línea Rojo Coral Claro */
+    padding-bottom: 10px; /* Espacio bajo el texto */
+    font-size: 2rem; /* Tamaño grande */
+    text-shadow: 0 2px 5px rgba(239, 83, 80, 0.5); /* Sombra roja */
+}
+
+/* Párrafos - Pertenece a los <p> en toda la página */
+p {
+    line-height: 1.8; /* Espaciado entre líneas */
+    color: #333; /* Gris oscuro */
+    font-size: 1.2rem; /* Tamaño legible */
+}
+
+/* Subbotones - Pertenece a los <button class="sub-button"> */
+.sub-button {
+    background: linear-gradient(45deg, #12d7f1, #ff1500); /* Rojo Rubí a Rojo Coral Claro */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    padding: 15px 30px; /* Espacio interno */
+    border-radius: 12px; /* Bordes redondeados */
+    margin: 15px 0; /* Espacio vertical */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Mayúsculas */
+    letter-spacing: 1.5px; /* Espaciado entre letras */
+    transition: all 0.4s ease; /* Transición suave */
+    box-shadow: 0 6px 20px rgba(239, 83, 80, 0.5); /* Sombra roja */
+    cursor: pointer; /* Cursor de mano */
+}
+
+/* Hover de los subbotones */
+.sub-button:hover {
+    background: linear-gradient(45deg, #d32f2f, #ef5350); /* Rojo Cereza a Rojo Rubí */
+    transform: translateY(-10px) scale(1.1); /* Elevación y escala */
+    box-shadow: 0 12px 30px rgba(239, 83, 80, 0.9); /* Sombra más intensa */
+}
+
+/* Subcontenido - Pertenece a los <div class="sub-content"> */
+.sub-content {
+    margin-top: 25px; /* Espacio superior */
+    padding: 25px; /* Espacio interno */
+    background: rgba(245, 246, 245, 0.95); /* Fondo gris claro */
+    border: 2px solid rgba(239, 83, 80, 0.4); /* Borde rojo sutil */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Sombra negra */
+    display: none; /* Oculto por defecto (controlado por JS) */
+}
+
+/* Pie de página - Pertenece al <footer> */
 footer {
-    background-color:  #0056b3;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-    position: fixed;
+    background: linear-gradient(90deg, #ff00f2, #ffee00); /* Gradiente rojo */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrado */
+    padding: 25px; /* Espacio interno */
+    position: fixed; /* Fijo en la parte inferior */
+    bottom: 0; width: 100%; /* Ocupa todo el ancho */
+    box-shadow: 0 -6px 30px rgba(239, 83, 80, 0.6); /* Sombra roja hacia arriba */
+    font-size: 1.2rem; /* Tamaño legible */
 }
-button{
-    background-color: #297bd3;
-    color: aliceblue;
-    border-radius: 9px;
-    border:none;
-}
-button:hover{
-    background-color:rgba(26, 219, 123, 0.397) ;
+
+/* Ajustes responsivos - Pertenece a todos los elementos en pantallas pequeñas */
+@media (max-width: 768px) {
+    header h1 { font-size: 2.2rem; } /* Reduce tamaño del título */
+    .list-group-item-action { padding: 15px; font-size: 0.95rem; } /* Botones más pequeños */
+    .contenido-seccion { padding: 25px; } /* Menos padding en secciones */
+    .sub-button { padding: 12px 25px; } /* Subbotones más compactos */
+    footer { padding: 20px; font-size: 1rem; } /* Footer más pequeño */
 }

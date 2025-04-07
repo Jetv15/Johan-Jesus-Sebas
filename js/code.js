@@ -1,13 +1,19 @@
-function mostrarContenido(id) {
-    // Ocultar todas las secciones de contenido
-    const secciones = document.querySelectorAll('.contenido-seccion');
-    secciones.forEach(seccion => {
+function mostrarContenido(seccionId) {
+    document.querySelectorAll('.contenido-seccion').forEach(seccion => {
         seccion.style.display = 'none';
     });
-
-    // Mostrar la sección correspondiente al botón clicado
-    const seccionSeleccionada = document.getElementById(id);
-    if (seccionSeleccionada) {
-        seccionSeleccionada.style.display = 'block';
-    }
+    document.getElementById(seccionId).style.display = 'block';
+    document.querySelectorAll('.sub-content').forEach(sub => {
+        sub.style.display = 'none';
+    });
 }
+
+function mostrarSubContenido(subId) {
+    document.querySelectorAll('.sub-content').forEach(sub => {
+        sub.style.display = 'none';
+    });
+    document.getElementById(subId).style.display = 'block';
+}
+
+// Mostrar la primera sección por defecto
+mostrarContenido('biologicos');
